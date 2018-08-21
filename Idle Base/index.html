@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheet.css" />
+        <script src="assets/scripts/jquery-3.3.1.min.js"></script>
+	</head>
+    
+	<body>    
+		<div id="flex-container">
+            <div class="flex-item1">
+                <h1>Overview</h1>
+                <h2>Gold: <span id="gold">0</span></h2>
+                <h3>Gold Earned: <span id="goldEarned">0</span></h3>
+                <button class="button" onclick="goldClick(1)">Mine Gold</button>
+                <h2>Prestige Points: <span id="prestigePoints">0</span></h2>
+                <h3>Points gained by prestige: <span id="pGBP">0</span></h3>
+                <button id="prestigeButton"class="button" onclick="prestige()">Prestige</button>
+                
+                <h2>Gold Per Second: <span id="goldPerSecond">0</span></h2>
+            </div>
+            <div class="flex-item2"> 
+                
+                <div class="btn-group" id="upgrades" style="width:100%">
+                    <h1 class="overview">Upgrades</h1>
+                </div>
+                
+                <div class="btn-group" id="multipliers" style="width:100%">
+                    <h1 class="overview">Multipliers</h1>
+                </div> 
+            </div>   
+        </div>
+        
+        <div class="console">
+            <h2 class="consoleText">Cannot afford item.</h2>
+        </div>
+        
+		<script type="text/javascript" src="assets/scripts/main.js"></script>
+        <script type="text/javascript" src="assets/scripts/upgrade/upgrade.js"></script>
+        <script type="text/javascript" src="assets/scripts/saveload.js"></script>
+        <script type="text/javascript" src="assets/scripts/prestige/prestige.js"></script>
+	</body>
+</html>
